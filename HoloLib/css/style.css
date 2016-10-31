@@ -1,11 +1,12 @@
 body {
-	background-color:#c2c2c2;
+	background-color:#FFFFFF;
+	border: 0px;
+	padding: 0px;
 }
 
-#content {
+.content {
 	position: absolute;
 	align: center;
 	width: 800px;
 	height: auto;
-	
 }
