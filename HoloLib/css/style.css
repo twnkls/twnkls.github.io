@@ -1,12 +1,183 @@
 body {
-	background-color:#FFFFFF;
+	background-color:#c2c2c2;
 	border: 0px;
 	padding: 0px;
+	margin:0px;
+}
+
+a {
+	color:white;
+}
+a:link {
+	color:white;
+}
+a:visited  {
+	color:white;
 }
 
 .content {
-	position: absolute;
-	align: center;
-	width: 800px;
+	margin: 0 auto;
+	margin-top:0px;
+	width: 1024px;
 	height: auto;
 }
+
+.content .header img {
+	width: 100%;
+}
+
+.content .header .logo {
+	position:absolute;
+	width: 370px;
+	margin-left: 15px;
+}
+
+.content .first_article {
+	width: 32.8%;
+	height: 100%;
+	background-color: black;
+	margin-right: 0px;
+	
+	float:left;
+	overflow:hidden;
+	border: solid 1px black;
+}
+
+/* PORTFOLIO ITEMS */
+.content .first_article .portfolio_item {
+	height: 100%;
+	width:100%;
+	overflow:hidden;
+	position:relative;
+	display: inline-block;
+	color: white;
+	cursor: pointer; cursor: hand; 
+}
+
+.content .first_article .portfolio_item img {
+	margin-left:-40%;
+	margin-top : -15%;
+}
+
+.content .first_article .portfolio_item .portfolio-overlay {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: -240px;
+    left: 0;
+    width: 95%;
+    height: 100%;
+    background: #000;
+    background: rgba(0,0,0,.8);
+    z-index: 999;
+	
+	padding-left: 10px;
+	padding-right: 10px;
+	
+	-webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+    transition-property: all;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-out;
+    transition-delay: initial;
+	top:80%;
+	
+	font-family: Segoe UI,Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue,Arial,sans-serif;
+}
+
+
+
+/* MIDDLE */
+.content .middle {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	height:310px;
+}
+
+.content .middle .description {
+	background-color:black;
+	color: white;
+	width: 66.2%;
+	height: 100%;
+	float: right;
+	border: solid 1px black;
+}
+
+.content .middle .description .description_content {
+	padding-left:25px;
+	font-family: Segoe UI,Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue,Arial,sans-serif; 
+	font-size: 15px;
+}
+
+.content .middle .description .description_content .downloadimg {
+	margin-left:60%;
+	margin-top:-100px;
+	margin-left: 400px;
+}
+
+.content .middle .description .description_content .downloadimg img {
+	height: 75px;
+}
+
+.content .articles {
+	display: inline-block;
+	width: 100%;
+	float:bottom;
+}
+
+.content .articles .bottom_article {
+	position:relative;
+	display: inline-block;
+	background-color:white;
+	color: white;
+	width: 32.87%;
+	height: 300px;
+	overflow:hidden;
+	border: solid 1px black;
+	cursor: pointer; cursor: hand; 
+}
+
+
+.content .bottom_article img  {
+	height: 300px;
+	width:auto;
+	margin-left:-40%;
+}
+
+.content .articles .article-overlay{
+	
+    position: absolute;
+    bottom: 0;
+    margin-bottom: -240px;
+    left: 0;
+    width: 95%;
+    height: 100%;
+    background: #000;
+    background: rgba(0,0,0,.8);
+    z-index: 999;
+	
+	padding-left: 10px;
+	
+	padding-right: 10px;
+	
+	-webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+    transition-property: all;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-out;
+    transition-delay: initial;
+	top:80%;
+	
+	font-family: Segoe UI,Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue,Arial,sans-serif;
+}
+
+.content .articles .article-overlay:hover{
+	top:0;
+}
+
+
+
+

@@ -3,14 +3,68 @@
 <title>com.twnkls.HoloLib</title>
 <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
+<script type="text/javascript">
+	function OnArticleOver( target )
+	{
+		var overlay = document.getElementById( target );
+		overlay.style.top = " 0px";
+	}
+	function OnArticleOut( target )
+	{
+		var overlay = document.getElementById( target );
+		overlay.style.top = " 80%";
+	}
+</script>
 <body>
-<table class="content">
-	<tr>
-		<td><img src="https://winblogs.azureedge.net/devices/2016/02/MSHoloLens_GroupShot_wAcc_WhtBG_V2_RGB.png"/></td>
-	</tr>
-	<tr>
-		<td>We are working on it.</td>
-	</tr>
-</table>
+<div class="content">
+	<div class="header">
+		<a href="http://www.twnkls.com" target="_blank"><img class="logo" src="images/logo.png" /></a>
+		<img src="images/Header_02.png"/>
+		
+	</div>
+		
+	<div class="middle">
+		<div class="first_article">
+			<div class="portfolio_item" onmouseover="OnArticleOver( 'p_overlay1' );" onmouseout="OnArticleOut('p_overlay1');"><img src="images/Wemo_project.jpg"/><div class="portfolio-overlay" id="p_overlay1"><img src="images/wemo_logo.png" style="margin-left:0px; margin-top:20px;width:125px; height:auto;"/><h3>Wemo Operator 2.0</h3>A digital factory workspace, built with the TWNKLS HoloLib.<br/><br/><br/><br/><br/><br/>[Click to read more]</div></div>
+		</div>
+		<div class="description">
+			<div class="description_content">
+				<h1>TWNKLS HoloLib</h1>
+				<p>Twnkls HoloLib is a <b>free</b> small Hololens framework for use inside Unity3D.</p>
+				<p>This framework provides:
+				<ul>
+					<li>A demo application.</li>
+					<li>Easy setup.</li>
+					<li>Fast development cycle.</li>
+					<li>Support for interactivity.</li>
+					<li>Support for spatial mapping.</li>
+					<li>Support for gaze interactions.</li>
+					<li>Support for voice controls.</li>
+				</ul>
+				</p>
+				<div class="downloadimg"><a href="https://github.com/twnkls/HoloLib" target="_blank"><img src="images/download.png" /></a></div>
+			</div>
+			
+		</div>
+	</div>
+	
+	<div class="articles">
+		<div class="bottom_article" onmouseover="OnArticleOver( 'overlay1' );" onmouseout="OnArticleOut('overlay1');">
+			<img src="http://twnkls.com/wp-content/uploads/2011/05/Header31.png" />
+			<a href="http://twnkls.com/2016/10/26/developing-for-hololens/" target="_blank"><div class="article-overlay" id="overlay1"><h3><b>Developing for Hololens.</b></h3>Learn how to develop a basic Hololens application.<br/><br/><br/><br/><br/><br/><br/><br/>[Click to read more]</div></a>
+		</div>
+		<div class="bottom_article" onmouseover="OnArticleOver( 'overlay2' );" onmouseout="OnArticleOut('overlay2');">
+			<img src="http://twnkls.com/wp-content/uploads/2011/05/641d9e34-8f2b-441c-96a6-a778517bdcf6-978x369.png"/>
+			<a href="http://twnkls.com/2016/10/05/designing_hololens/" target="_blank"><div class="article-overlay" id="overlay2"><h3><b>Designing for Hololens.</b></h3>Discover what it takes to design a Hololens application.<br/><br/><br/><br/><br/><br/><br/><br/>[Click to read more]</div></a>
+		</div>
+		<div class="bottom_article" onmouseover="OnArticleOver( 'overlay3' );" onmouseout="OnArticleOut('overlay3');">
+			<img src="http://twnkls.com/wp-content/uploads/2011/05/Holo_Meta-1024x3241-978x324.png"/>
+			<a href="http://twnkls.com/2016/07/01/standalone-or-wide-field-of-view-hmd-hololens-vs-meta2/" target="_blank"><div class="article-overlay" id="overlay3"><h4><b>Standalone or Wide field-of-view HMD?</b></h4>Explore the key differences of the Microsoft Hololens versus other competitors.<br/><br/><br/><br/><br/><br/><br/><br/>[Click to read more]</div></a>
+		</div>
+	</div>
+	
+	
+	
+</div>
 </body>
 </html>
