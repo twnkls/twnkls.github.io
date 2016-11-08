@@ -9,11 +9,12 @@
 		var overlay = document.getElementById( target );
 		overlay.style.top = " 0px";
 	}
-	function OnArticleOut( target )
+	function OnArticleOut( target, offset )
 	{
 		var overlay = document.getElementById( target );
-		overlay.style.top = " 80%";
+		overlay.style.top = offset;
 	}
+	
 </script>
 <body>
 <div class="content">
@@ -25,7 +26,8 @@
 		
 	<div class="middle">
 		<div class="first_article">
-			<a href="https://www.wemomachines.com/en/smart-industry/wemo-operator-system" target="_blank"><div class="portfolio_item" onmouseover="OnArticleOver( 'p_overlay1' );" onmouseout="OnArticleOut('p_overlay1');"><img src="images/Wemo_project.jpg"/><div class="portfolio-overlay" id="p_overlay1"><img src="images/wemo_logo.png" style="margin-left:0px; margin-top:20px;width:125px; height:auto;"/><h3>Wemo Operator 2.0</h3>A digital factory workspace, built with the TWNKLS HoloLib.<br/><br/><br/><br/><br/><br/>[Click to read more]</div></div></a>
+			<a href="http://twnkls.com/items/wemolens/" target="_blank"><div class="portfolio_item" onmouseover="OnArticleOver( 'p_overlay1' );" onmouseout="OnArticleOut('p_overlay1', '100px');"><img src="images/Wemo_project.jpg"/><div class="portfolio-overlay" id="p_overlay1"><img src="images/wemo_logo.png" style="margin-left:0px; margin-top:20px;width:125px; height:auto;"/><h3>Wemo Operator 2.0</h3>A digital factory workspace, built with the TWNKLS HoloLib.<br/><br/><br/><br/><br/><br/>[Click to read more]</div></div></a>
+			<a href="http://twnkls.com/items/waspphobia/" target="_blank"><div class="portfolio_item" onmouseover="OnArticleOver( 'p_overlay2' );" onmouseout="OnArticleOut('p_overlay2', '100px' );"><img src="http://twnkls.com/wp-content/uploads/2011/05/waspphobia_header1-978x383.png"/><div class="portfolio-overlay" id="p_overlay2"><img src="images/captain_VR_logo.png" style="margin-left:0px; margin-top:15px;width:125px; height:auto;"/><h3>Wasp Phobia</h3>A therapeutic hololens experience to overcome phobia for wasps.<br/><br/><br/><br/><br/><br/>[Click to read more]</div></div></a>
 		</div>
 		<div class="description">
 			<div class="description_content">
@@ -49,15 +51,15 @@
 	</div>
 	
 	<div class="articles">
-		<div class="bottom_article" onmouseover="OnArticleOver( 'overlay1' );" onmouseout="OnArticleOut('overlay1');">
+		<div class="bottom_article" onmouseover="OnArticleOver( 'overlay1' );" onmouseout="OnArticleOut('overlay1', '240px');">
 			<img src="http://twnkls.com/wp-content/uploads/2011/05/Header31.png" />
 			<a href="http://twnkls.com/2016/10/26/developing-for-hololens/" target="_blank"><div class="article-overlay" id="overlay1"><h3><b>Developing for Hololens.</b></h3>Learn how to develop a basic Hololens application.<br/><br/><br/><br/><br/><br/><br/><br/>[Click to read more]</div></a>
 		</div>
-		<div class="bottom_article" onmouseover="OnArticleOver( 'overlay2' );" onmouseout="OnArticleOut('overlay2');">
+		<div class="bottom_article" onmouseover="OnArticleOver( 'overlay2' );" onmouseout="OnArticleOut('overlay2', '240px');">
 			<img src="http://twnkls.com/wp-content/uploads/2011/05/641d9e34-8f2b-441c-96a6-a778517bdcf6-978x369.png"/>
 			<a href="http://twnkls.com/2016/10/05/designing_hololens/" target="_blank"><div class="article-overlay" id="overlay2"><h3><b>Designing for Hololens.</b></h3>Discover what it takes to design a Hololens application.<br/><br/><br/><br/><br/><br/><br/><br/>[Click to read more]</div></a>
 		</div>
-		<div class="bottom_article" onmouseover="OnArticleOver( 'overlay3' );" onmouseout="OnArticleOut('overlay3');">
+		<div class="bottom_article" onmouseover="OnArticleOver( 'overlay3' );" onmouseout="OnArticleOut('overlay3', '240px');">
 			<img src="http://twnkls.com/wp-content/uploads/2011/05/Holo_Meta-1024x3241-978x324.png"/>
 			<a href="http://twnkls.com/2016/07/01/standalone-or-wide-field-of-view-hmd-hololens-vs-meta2/" target="_blank"><div class="article-overlay" id="overlay3"><h4><b>Standalone or Wide field-of-view HMD?</b></h4>Explore the key differences of the Microsoft Hololens versus other competitors.<br/><br/><br/><br/><br/><br/><br/><br/>[Click to read more]</div></a>
 		</div>
